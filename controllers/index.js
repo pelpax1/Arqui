@@ -13,7 +13,7 @@ module.exports = function (router) {
         
     });
 
-    router.post(´/´, function (req, res){
+    router.post('/', function (req, res){
         
         var x = req.body;
         //res.send('<code><pre>' + req.body + '</pre></code>');
