@@ -9,9 +9,23 @@
     "specialization": {
     },
 
-    "middleware": {
-
+ "middleware": {
         
+        "appsec": {
+            "enabled": false,
+            "priority": 110,
+            "module": {
+                "name": "lusca",
+                "arguments": [
+                    {
+                        "csrf": false,
+                        "p3p": false,
+                        "xframe": "SAME-ORIGIN",
+                        "csp": false
+                    }
+                ]
+            }
+        },
 
         "static": {
             "module": {
