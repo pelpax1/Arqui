@@ -17,7 +17,7 @@ module.exports = function (router) {
         
         var x = req.body;
         res.send('<code><pre>' + req.body + '</pre></code>');
-        res.status(200).end;
+        res.status(200).end();
     });
 
 };
